@@ -1,0 +1,3 @@
+execute at @e[type=armor_stand,tag=PlayerHats.Porkpie.1,limit=1,sort=nearest] anchored feet run tp @s ~ ~.7 ~ ~ ~
+execute at @s store result entity @s Pose.Head[0] float 1 run data get entity @r[nbt={UUID: [I; 1906707254, -884913547, -1392733193, -1125821020]},limit=1] Rotation[1]
+execute unless entity @s[nbt={Pose: {Head: [0f, 0f, 0f]}}] at @s run data merge entity @s {Pose: {Head: [0.01f, 0f, 0f]}}

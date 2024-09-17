@@ -1,0 +1,1 @@
+execute as @e[type=armor_stand,tag=PlayerHats.Porkpie.1] unless entity @p[tag=PlayerHats.Wearing.Porkpie,distance=..1] run function playerhats:pork_pie/standspecial
